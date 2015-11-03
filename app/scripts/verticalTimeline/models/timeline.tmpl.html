@@ -1,0 +1,20 @@
+<div style="min-height: 100vh">
+    <div class="tldata clearfix">{{vm.content.name}}</div>
+    <ul class="timeline">
+
+        <li ng-repeat="item in vm.content.eventsArray" class='{{item.class}}'>
+            <div class="tl-circ" ng-show="!item.imageUrl"></div>
+            <div class="timeline-panel">
+                <div class="tl-heading" ng-show="!item.imageUrl">
+                    <h3>{{item.event_name}}</h3>
+                </div>
+                <div class="tl-body" ng-show="item.imageUrl">
+
+                    <img ng-src="{{item.imageUrl}}" alt="lorem pixel">
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+</div>

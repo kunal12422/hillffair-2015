@@ -1,0 +1,31 @@
+{
+  "name": "hillffair15",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "bootstrap": "^3.2.0",
+    "fullpage.js": "~2.7.4",
+    "angular-ui-router": "~0.2.15",
+    "normalize.css": "~3.0.3",
+    "jquery-ui": "~1.11.4",
+    "letteringjs": "~0.7.0",
+    "owl.carousel": "~2.0.0-beta.3",
+    "animate.css": "~3.4.0",
+    "parallax": "~2.1.3",
+    "scrollreveal": "scrollReveal.js#~2.3.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "hillffair15App",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}

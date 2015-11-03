@@ -1,0 +1,27 @@
+<div class="container-fluid " xmlns:javascript="http://www.w3.org/1999/xhtml">
+
+    <div class="row">
+
+     <div class="col-sm-3 col-md-2 sidebar" style="color: black" ui-view="categories"></div>
+
+        <div class="col-sm-9 col-sm-offset-3  col-md-10 col-md-offset-2 main" style="color: black;" ui-view="timeline"></div>
+
+    </div>
+
+</div>
+
+<ul id="ferro" ferroinit>
+
+
+    <li class="tooltip" title="Fine art"><a href="javascript:void(0);" ui-sref="event-timeline.view({category: 4})" ><span class="glyphicon glyphicon-pencil"></span></a></li>
+    <li class="tooltip" title="In4mals"><a href="javascript:void(0);" ui-sref="event-timeline.view({category: 3})" ><span class="glyphicon glyphicon-user
+glyphicon "></span></a></li>
+    <li class="tooltip" title="Dance"><a href="javascript:void(0);" ui-sref="event-timeline.view({category: 2})"><span class=" glyphicon glyphicon-picture"></span></a></li>
+
+    <li class="tooltip" title="Music"><a href="javascript:void(0);" ui-sref="event-timeline.view({category: 1})"><span class="glyphicon glyphicon-music"></span></a></li>
+
+    <li class="tooltip" title="Drama"><a href="javascript:void(0);" ui-sref="event-timeline.view({category: 0})"><span class="glyphicon glyphicon-facetime-video"></span></a></li>
+
+    <li  class="tooltip" title="Home"><a href="javascript:void(0);" ui-sref="home" ><span class="glyphicon glyphicon-home"></span></a></li>
+
+</ul>

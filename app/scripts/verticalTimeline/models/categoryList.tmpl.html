@@ -1,0 +1,10 @@
+<a href="#" ui-sref="home">
+    <img class="logo" src="images/scene1/logo2.png">
+</a>
+<ul class="nav nav-sidebar">
+    <li ng-repeat="category in vm.categories" ng-class="vm.getClass('/events-timeline/details/'+category.id )">
+        <a  ng-click="vm.setActive(category.class)" ui-sref="event-timeline.view({category: category.id})">
+            {{category.name}}
+        </a>
+    </li>
+</ul>

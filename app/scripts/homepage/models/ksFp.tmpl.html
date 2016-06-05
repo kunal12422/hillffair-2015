@@ -5,12 +5,12 @@
             <ul>
             <li><a href="/" ui-sref="home"><img src="" data-src="images/scene1/home.png" class="home disable-selection"></a></li>
               <li><a href="/#secondPage"><img src="" data-src="images/scene1/about-us.png" class="about-us disable-selection"></a></li>
-            <li><a href="/#thirdPage" ><img src="" data-src="images/scene1/events.png" class="events-detail disable-selection"></a></li>
-            <li><a href="/" ><img src="" data-src="images/scene1/logo-rope.png" class="logo-mp disable-selection"></a></li>
+            <li><a href="/#thirdPage"><img src="" data-src="images/scene1/events.png" class="events-detail disable-selection"></a></li>
+            <li><a href="/#firstPage" ><img src="" data-src="images/scene1/logo-rope.png" class="logo-mp disable-selection"></a></li>
             <li><a href="/#fouthPage"><img src="" data-src="images/scene1/gallery.png" class="gallery disable-selection"></a></li>
             <li><a href="/#fifthPage"><img src="" data-src="images/scene1/sponsors.png" class="sponsors disable-selection"></a></li>
             <li><a href="/#sixthPage"><img src="" data-src="images/scene1/contact-us.png" class="contact-us disable-selection"></a></li>
-                             
+
        </ul>
         </div>
         <div class="spotlight-1  disable-selection"></div>
@@ -31,25 +31,28 @@
 
     </div>
         <div  class="marquee disable-selection"></div>
-        <div class="leftcurtain"><img class="disable-selection" src="" data-src="images/scene1/iCurtain.jpg"/></div>
-        <div class="rightcurtain"><img class="disable-selection" src="" data-src="images/scene1/iCurtain.jpg"/></div>
-    
+        <div class="leftcurtain"><img class="disable-selection" src="images/scene1/iCurtain.jpg"/></div>
+        <div class="rightcurtain"><img class="disable-selection" src="images/scene1/iCurtain.jpg"/></div>
+   <a href="#" ng-click="vm.scrollDown()"> <div class="arrow bounce"></div></a>
     </div>
     <div class="section" id="scene2">
                 <div class="scene2_data disable-selection">
                     <div class="scene2_heading disable-selection">
                         <div class="scene2_heading_text demo2 disable-selection">About Hill'ffair</div>
                         <div class="scene2_heading_text mf-demo2 disable-selection">About Hill'ffair</div>
-                        <img src="" class="text-underline" data-src="images/white-rule.png" class="disable-selection">
+                        <img src="" class="text-underline disable-selection" data-src="images/white-rule.png">
                     </div>
                     <div class="scene2_content disable-selection">
-                    <p>HILL’FFAIR, the annual cultural fest of NIT Hamirpur, boasts of being a three day extravaganza filled with fun, frolic and excitement; when the campus wears a festive atmosphere, which is only made more exciting by the beauty of the mountains around. It also marks the celebration of independence and working together towards a common motive. Since the time its roots were laid, way back in 1988, it has only grown and grown in every aspect - be it the standards, popularity or the level of competition. No wonder, today, HILL'FFAIR is one of the major college fests in northern India!</p>
+                    <p>HILL’FFAIR, the annual cultural fest of NIT Hamirpur, boasts of being a three day extravaganza filled with fun, frolic and excitement. When the campus wears a festive atmosphere, which is only made more exciting by the beauty of the mountains around.Since the time its roots were laid, way back in 1988, it has only grown and grown in every aspect - be it the standards, popularity or the level of competition. No wonder, today, HILL'FFAIR is one of the major college fests in northern India!</p>
 
-                       <p> The event celebrates cultural diversity- equally respecting the East and the West. Being theme based, it provides a platform for people to showcase their talents and creativity within the limits of the theme. We take great pleasure in informing you that this year’s theme is “La Vendimia – The Retro Revival”. And we are sure to set the golden age of the 70’s rolling again, amidst unparalleled joy and celebrations, which will capture the essence and mirth of the yester years.</p>
-                    </div>
-                </div>
+                         <p> The event celebrates cultural diversity- equally respecting the East and the West. Being theme based, it provides a platform for people to showcase their talents and creativity within the limits of the theme. We take great pleasure in informing you that this year’s theme is <b>“La Vendimia – The Retro Revival”</b>. And we are sure to set the golden age of the 70’s rolling again, amidst unparalleled joy and celebrations, which will capture the essence and mirth of the yester years.</p>
+                      </div>
+                  </div>
 
-    </div>
+      </div>
+
+
+
     <div class="section" id="scene3">
 
                 <div class="scene3_data disable-selection">
@@ -57,7 +60,7 @@
                         <div class="scene3_heading_text demo3 disable-selection">Cultural Events </div>
                         <div class="scene3_heading_text mf-demo3 disable-selection">Cultural Events </div>
 
-                        <img src="" class="text-underline" data-src="images/white-rule.png" class="disable-selection">
+                        <img src="" class="text-underline disable-selection" data-src="images/white-rule.png">
                     </div>
 
 
@@ -65,8 +68,17 @@
                     <div class="scene3_images_row clearfix">
 
 
+                      <div id="scene3_image_0">
+                        <a ui-sref="event-timeline.view({category:0})">
+                          <img src="" data-src="images/scene3/black&white/high.png" class="ksbadge disable-selection">
+                          <img src="" data-src="images/scene3/black&white/highlights.png"  class="ksbanner disable-selection" >
+                        </a>
+
+                      </div>
+
+
                         <div id="scene3_image_3">
-                            <a ui-sref="event-timeline.view({category:0})">
+                            <a ui-sref="event-timeline.view({category:1})">
                                 <img src="" data-src="images/scene3/black&white/dramatics_club.png" class="ksbadge disable-selection">
                                 <img src="" data-src="images/scene3/black&white/dramatics(350x100).png"  class="ksbanner disable-selection" >
                             </a>
@@ -74,7 +86,7 @@
                         </div>
 
                            <div id="scene3_image_1">
-                               <a ui-sref="event-timeline.view({category:1})">
+                               <a ui-sref="event-timeline.view({category:2})">
                                    <img src="" data-src="images/scene3/black&white/music_club.png" class="ksbadge disable-selection"  >
                                    <img src="" data-src="images/scene3/black&white/music(350x100).png"  class="ksbanner disable-selection">
                                </a>
@@ -82,7 +94,7 @@
                            </div>
 
                             <div id="scene3_image_2">
-                                <a ui-sref="event-timeline.view({category:2})">
+                                <a ui-sref="event-timeline.view({category:3})">
                                     <img src="" data-src="images/scene3/black&white/dance_club.png" class="ksbadge disable-selection" >
                                     <img src="" data-src="images/scene3/black&white/dance(350x100).png"  class="ksbanner disable-selection" >
                                 </a>
@@ -91,7 +103,7 @@
                             </div>
 
                         <div id="scene3_image_5">
-                            <a ui-sref="event-timeline.view({category:3})">
+                            <a ui-sref="event-timeline.view({category:4})">
 
                                 <img src="" data-src="images/scene3/black&white/in4mal.png" class="ksbadge disable-selection">
                                 <img src="" data-src="images/scene3/black&white/in4mals(350x100).png"  class="ksbanner disable-selection">
@@ -99,7 +111,7 @@
                         </div>
 
                             <div id="scene3_image_4">
-                                <a ui-sref="event-timeline.view({category:4})">
+                                <a ui-sref="event-timeline.view({category:5})">
                                     <img src="" data-src="images/scene3/black&white/finearts.png" class="ksbadge disable-selection">
                                     <img src="" data-src="images/scene3/black&white/finearts(350x100).png"  class="ksbanner disable-selection">
                                 </a>
@@ -117,49 +129,80 @@
         <div class="slide" id="slide1">
                 <div class="slide-fest ">
                          <span class="gallery-link disable-selection" ng-click="vm.GallerySlide()" >Gallery</span>
-                         
+
                          <!-- <img data-src="app/images/gallery/open_air.jpg" class="grayscale grayscale-fade gallery-pic" alt="oat" /> -->
-                       
+
                 </div>
 
         </div>
 
         <div class="slide" id="slide2">
          <div class="slide-fest">
-            <span class="gallery-link disable-selection" ng-click="vm.GallerySlide()" >Gallery</span>
              <!-- <img data-src="app/images/gallery/scene2.jpeg" class="grayscale grayscale-fade gallery-pic" alt="2" /> -->
         </div>
-            
+
         </div>
         <div class="slide" id="slide3">
             <div class="slide-fest">
-            
+
              <!-- <img data-src="app/images/gallery/scene3.jpg " class="grayscale grayscale-fade gallery-pic" alt="oat" /> -->
             </div>
-         </div> 
+         </div>
 
-       </div>
 
-    
+        <div class="slide" id="slide4">
+            <div class="slide-fest">
+
+                <!-- <img data-src="app/images/gallery/scene3.jpg " class="grayscale grayscale-fade gallery-pic" alt="oat" /> -->
+            </div>
+        </div>
+
+      <div class="slide" id="slide5">
+        <div class="slide-fest">
+
+          <!-- <img data-src="app/images/gallery/scene3.jpg " class="grayscale grayscale-fade gallery-pic" alt="oat" /> -->
+        </div>
+      </div>
+
+
+
+    </div>
+
+
 
     <div class="section fp-auto-height" id="scene5">
-        
+
         <div class="ks-fp-height">
         <div>
              <div id="sponsor-head" class="disable-selection">Our Sponsors</div>
+
         </div>
-           
+
             <div class="mainBgColor"></div>
             <div class="owl-carousel owl-theme" id="owl-slider">
-               
-               <div class="item"><img src="" data-src="images/scene5-sponsors/nescafe.jpeg" alt="Owl Image" id="owl-1"></div>
-              <div class="item"><img src="" data-src="images/scene5-sponsors/nescafe.jpeg" alt="Owl Image" id="owl-2"></div>
-              <div class="item"><img  src="" data-src="images/scene5-sponsors/nescafe.jpeg" alt="Owl Image" id="owl-3"></div>
-              <div class="item"><img src="" data-src="images/scene5-sponsors/nescafe.jpeg" alt="Owl Image" id="owl-4"></div>
-              <div class="item"><img src="" data-src="images/scene5-sponsors/nescafe.jpeg" alt="Owl Image" id="owl-5"></div>
-              <div class="item"><img src="" data-src="images/scene5-sponsors/nescafe.jpeg" alt="Owl Image" id="owl-6"></div>
-              <div class="item"><img  src="" data-src="images/scene5-sponsors/nescafe.jpeg" alt="Owl Image" id="owl-7"></div>
-              <div class="item"><img  src="" data-src="images/scene5-sponsors/nescafe.jpeg" alt="Owl Image" id="owl-8"></div>
+
+               <div class="item"><img src="" data-src="images/scene5-sponsors/nescafe-min.jpg" alt="nescafe" id="owl-1"></div>
+              <div class="item"><img src="" data-src="images/scene5-sponsors/neo-wolf-min.jpg" alt="Neo Wolf" id="owl-2"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/kccb-min.jpg" alt="Kangra Cooperative Bank" id="owl-3"></div>
+              <div class="item"><img src="" data-src="images/scene5-sponsors/prodot-min.jpg" alt="Pro Dot" id="owl-4"></div>
+              <div class="item"><img src="" data-src="images/scene5-sponsors/sjvn-min.jpg" alt="SJVN" id="owl-5"></div>
+              <div class="item"><img src="" data-src="images/scene5-sponsors/chankya-min.jpg" alt="Chankya Hamirpur" id="owl-6"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/antariksh-min.jpg" alt="Antariksh Hamirpur" id="owl-7"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/A9-min.jpg" alt="A9 Hiranagar" id="owl-8"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/ebay-min.jpg" alt="Ebay" id="owl-9"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/vodafone-min.jpg" alt="Vodafone" id="owl-10"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/Himachal-Pradesh-Gramin-Bank-Logo-min.jpg" alt="Himachal-Pradesh-Gramin-Bank-Logo" id="owl-11"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/Himachal-state-corporative-bank-limited-min.jpg" alt="Himachal-state-corporative-bank-limited" id="owl-12"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/him-cab-min.jpg" alt="Him Cab" id="owl-13"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/loreal-min.jpg" alt="loreal" id="owl-14"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/made-easy.jpg" alt="Made Easy" id="owl-15"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/medco-min.jpg" alt="Medco" id="owl-16"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/vidyapeeth-min.jpg" alt="vidyapeeth" id="owl-17"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/acme.jpg" alt="Acme" id="owl-18"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/amul.jpg" alt="Amul" id="owl-19"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/himuda.jpg" alt="Himuda" id="owl-20"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/ricoh.jpg" alt="Ricoh" id="owl-21"></div>
+              <div class="item"><img  src="" data-src="images/scene5-sponsors/hhh.jpg" alt="HHH" id="owl-22"></div>
 
         </div>
 
@@ -174,7 +217,9 @@
 
     <div class="team-wrapper">
             <div class="team-head">Contact Us</div>
-     <div class="box1">
+        <img src="" class="text-underline disable-selection" data-src="images/white-rule.png">
+
+        <div class="box1">
         <span class="post"> Faculty Coodinator </span> <br/>
         <span class="name" > Surender Soni </span> <br/>
         <span class="phone"> +91 9816587985 </span>
@@ -212,7 +257,7 @@
     </tr>
     <tr>
         <td colspan="4" ><span class="post">Joint Secretaries</span></td>
-        
+
     </tr>
     <tr>
         <td>
@@ -269,14 +314,14 @@
         <td>
             <div class="contact">
             <span class="post"> Technical Committee </span><br/>
-            <span class="name" > Srinath Kadyan</span><br/>
+            <span class="name" > Srinath</span><br/>
             <span class="phone"> +91 9882619389</span>
             </div>
         </td>
     </tr>
     <tr>
         <td>
-        
+
         </td>
         <td>
             <div class="contact">
@@ -293,12 +338,12 @@
             </div>
         </td>
         <td>
-        
+
         </td>
     </tr>
 </table>
     </div>
-</div> 
+</div>
 
 </div>
 

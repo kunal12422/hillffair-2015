@@ -5,7 +5,8 @@
 
         var link = function(scope, elem, attrs){
 
-
+            console.log('Chrome: Weird flickering?');
+            console.log('Try this: --->  Click on Settings menu option  --->  Click on Advance setting  ---->  Un-Check \'Use Hardware acceleration when available\' checkbox  ---->  Restart your Browser!');
             var option = scope.$eval(attrs.options);
 
             angular.element(document).ready(function () {
@@ -89,8 +90,8 @@
                     var points      = null;
                     var constraints = null;
                     var skins       = null;
-                    var kGravity    = 2.8;
-                    var kFriction   = 0.99;
+                    var kGravity    = 1.5;
+                    var kFriction   = 0.98;
                     var base        = 'images/scene1/';
                     var iwidth = 350;
                     var iheight = 200;
@@ -595,7 +596,7 @@
 
                     run();
 
-                    console.log('In canvas timeout');
+
 
                 },0);
 
@@ -622,6 +623,9 @@
                             $.fn.fullpage.moveSlideRight();
                             return false;
                         };
+                        vm.scrollDown  = function(){
+                            $.fn.fullpage.moveSectionDown();
+                        }
 
 
                     },

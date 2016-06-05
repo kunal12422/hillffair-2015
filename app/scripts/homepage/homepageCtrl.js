@@ -40,17 +40,17 @@
             if(isMobile.any()) {
                      $window.mobile = true;
                 }
-        
+
 
 
         // console.log($('html').hasClass('fp-enabled'));
         vm.options = {
-          
+
             anchors:['firstPage', 'secondPage', 'thirdPage', 'fouthPage', 'fifthPage','sixthPage'],
             autoScrolling:true,
             scrollOverflow:true,
              navigationTooltips: ['HOME', 'ABOUT', 'EVENTS', 'GALLERY', 'SPONSORS','CONTACT'],
-          
+
             //verticalCentered:false,
             scrollBar: false,
             easing: 'easeInSine',
@@ -76,18 +76,18 @@
                                  $('.scene3_heading').addClass('animated hidden');
                                 $('.scene3_images').addClass('animated hidden');
                                 $('.gallery-link').addClass('animated hidden');
-                            
+
                             }
             },
             afterLoad: function(anchorLink, index) {
 
                 if(!mobile){
                      if(index == 2){
-                        $('.scene2_heading').removeClass('hidden').addClass('fadeInDownBig');
+                        $('.scene2_heading').removeClass('hidden').addClass('pulse');
                         $('.scene2_content').removeClass('hidden').addClass('fadeIn');
                     }
                     if(index == 3){
-                        $('.scene3_heading').removeClass('hidden').addClass('fadeInDownBig');
+                        $('.scene3_heading').removeClass('hidden').addClass('pulse');
                         $('.scene3_images').removeClass('hidden').addClass('fadeIn');
                     }
                     if (index == 4) {
@@ -96,28 +96,16 @@
                         $('.fp-controlArrow.fp-prev').css('display', 'none');
                     }
                 }
-               
+
             },
 
             onLeave: function(index, nextIndex, direction) {
 
                 if(index == 4) {
                     $('#fp-nav').show();
-                    
+
                 }
-            },
-            afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-           
-
-            
-            if(anchorLink == 'fouthPage' && slideIndex == 1){
-                
-                $('.fp-controlArrow.fp-prev').css('display', '');
             }
-
-            
-            
-        }
 
 
         };

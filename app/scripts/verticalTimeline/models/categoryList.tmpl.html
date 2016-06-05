@@ -2,9 +2,16 @@
     <img class="logo" src="images/scene1/logo2.png">
 </a>
 <ul class="nav nav-sidebar">
-    <li ng-repeat="category in vm.categories" ng-class="vm.getClass('/events-timeline/details/'+category.id )">
+    <li ng-repeat="category in vm.categories" ng-class="vm.getClass('/events/details/'+category.id )">
         <a  ng-click="vm.setActive(category.class)" ui-sref="event-timeline.view({category: category.id})">
             {{category.name}}
         </a>
     </li>
 </ul>
+<div class="footer-social-icons">
+  <ul class="social-icons">
+    <li><a href="https://www.facebook.com/hillffair/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.youtube.com/user/pixonoids" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.appteam.hillffair" class="social-icon" > <i class="fa fa-android"></i></a></li>
+  </ul>
+</div>

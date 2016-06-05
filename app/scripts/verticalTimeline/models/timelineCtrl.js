@@ -4,7 +4,6 @@
 
     var timelineCtrl  = function(item){
       var vm = this;
-    //console.log(item);
         vm.content = item;
 
 

@@ -1,18 +1,21 @@
 <div style="min-height: 100vh">
-    <div class="tldata clearfix">{{vm.content.name}}</div>
+    <div class="tldata" ng-show="!vm.content.class">{{vm.content.name}}</div>
+    <div class="tldata" ng-show="vm.content.class"><span class="glyphicon glyphicon-star"></span>{{vm.content.name}}</div>
     <ul class="timeline">
 
         <li ng-repeat="item in vm.content.eventsArray" class='{{item.class}}'>
-            <div class="tl-circ" ng-show="!item.imageUrl"></div>
-            <div class="timeline-panel">
-                <div class="tl-heading" ng-show="!item.imageUrl">
-                    <h3>{{item.event_name}}</h3>
+            <div class="tl-circ" ng-show="!item.imageUrl"><span class="glyphicon glyphicon-plus-sign"></span></div>
+            <div class="timeline-panel" ng-show="!item.imageUrl">
+                <div class="tl-heading" >
+                    <h3>{{item.event_id}}. <b>{{item.event_name}}</b></h3>
                 </div>
-                <div class="tl-body" ng-show="item.imageUrl">
 
-                    <img ng-src="{{item.imageUrl}}" alt="lorem pixel">
-                </div>
             </div>
+
+          <div class="tl-body" ng-show="item.imageUrl">
+
+            <img ng-src="{{item.imageUrl}}" alt="{{item.alternate}}">
+          </div>
         </li>
 
     </ul>
